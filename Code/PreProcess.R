@@ -290,7 +290,7 @@ df <- df %>%
   group_by(BuyerID) %>%
   mutate(Risky = ifelse((sum(Returned)/n())>0.1,1,0))
 
-write.csv(df,'./caseML.csv')
+write.csv(df,'./case.csv')
 
 
 
